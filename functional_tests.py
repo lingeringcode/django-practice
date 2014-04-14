@@ -1,11 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import unittest
-import logging
 
-class NewVisitorTest(unittest.TestCase):  #1
+class NewVisitorTest(unittest.TestCase):
 
-    def setUp(self):  #2
+    def setUp(self):
         self.browser = webdriver.Firefox()
         self.browser.implicitly_wait(3)
 
@@ -61,5 +60,5 @@ class NewVisitorTest(unittest.TestCase):  #1
 		# Satisfied, she goes back to sleep
         self.fail('Finish the test!')
 
-if __name__ == '__main__':  #7
-    unittest.main(warnings='ignore') #8
+if __name__ == '__main__':
+    unittest.main(warnings='ignore')
